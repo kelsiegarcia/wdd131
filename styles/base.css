@@ -1,0 +1,124 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;  
+    height: 100vh;
+    padding: 0;
+    align-items: center;
+}
+
+header {
+    background-color: #eaf0ef;
+    color: #F8F8F8;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 1px 1px lightblue;
+    margin-top: -150px;
+    padding-top: 10px;
+}
+
+.navigation {
+   display: flex;
+   justify-content: space-evenly; 
+   align-items: center;
+   background-color: #a2b2b7;
+   text-decoration: none;
+   color: #F8F8F8;
+   padding: 20px;
+}
+
+a {
+    color:#F8F8F8;
+    text-decoration: none;
+}
+
+a:link {
+    color:#F8F8F8;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#nav-font-size {
+    font-size: 25px;
+}
+
+img {
+    width: 375px;
+    border-radius: 25px;
+    box-shadow: 1px 1px lightgray;
+}
+
+.main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1600px;
+    align-self: baseline;
+}
+
+.section-container {
+    /* margin: 0 auto; */
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+}
+
+h2 {
+    background-color: #a2b2b7;
+    padding: 10px;
+}
+
+.card1{
+    text-align: center;
+    border: 2px solid grey; 
+    border-radius: 20px;   
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+}
+
+.card2{
+    border: 2px solid grey; 
+    border-radius: 20px; 
+    width: 600px;  
+}
+
+a.resources {
+    color:rgb(27, 27, 27);
+}
+
+
+/* .list-grid {
+    display: grid;
+    grid-template-columns: 155px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+li {
+    display: inline;
+    grid-row: 2;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    grid-column: 1;
+    
+} */
+
+footer {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px; 
+    background-color:#eaf0ef;
+    color: #F8F8F8;
+    text-shadow: 1px 1px lightblue;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
