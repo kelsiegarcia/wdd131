@@ -7,6 +7,10 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kelsie Garcia - About Me Page">
     <meta name="author" content="Kelsie Garcia">
     <link rel="stylesheet" href="styles/base.css">
+    <script defer src="scripts/getdates.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
     <title>WDD 131 - Dynamic Web Fundamentals - Kelsie Garcia</title>
   </head>
   <body>
@@ -26,28 +30,37 @@
             About Me
           </h2>
           <div class="description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            I have a family of 5 and I love traveling with them all over the United States. Last summer we traveled to Arizona, Colorado, Montana, Utah, and California. We also visit the islands in Hawaii. My other hobbies include reading 500 page novels, hiking, going to beach, and watching movies. I love doing Front End Development, I love seeing all the code rendered into the web page. It fuels my creative outlet. 
             <img src="images/me2.jpg" alt="self-portrait" />
           </div>
+          <div class="hi-section">
+            Aloha from Hawaii
+          </div>
+          <div class="hi-description">
+           I have lived in Hawaii for 7 years now. I am originally from Utah and found my Hawaiian sweetheart when we were at college. Now we have 5 kids and explore all the Hawaiian Islands. There are pineapple farms, shrimp farms, macadamia nut farms. There are many water sports. We enjoy surfing, fishing, and snorkeling. As a 7 year transplant and my kids are native Hawaiian, we ask that we all have Aloha for each other and for the island. We take care of each other and our 'aina. Mahalo for being here!
+            <img src="images/hiflag.png" alt="hawaiian flag" />
+          </div>
+        
         </section>
         <section class="card2">
           <h2>
             Web Resources
           </h2>
-          <div>
-            <a class="resources">1</a>
-            <a class="resources">2</a>
-            <a class="resources">3</a>
+          <div class="resource-group">
+            <a href="https://developer.mozilla.org/en-US/" title="mdn"class="resources">MDN  Resources for Developers</a>
+            <a href="https://www.w3schools.com/" title="W3"class="resources">W3 Schools </a>
+            <a href="https://www.udemy.com/" title="Udemy"class="resources">Udemy</a>
+            <a href="https://www.medium.com/" title="Medium"class="resources">Medium</a>
+
           </div>
-        
         </section>
       </div>
     </main>
     <footer>
       <p>
-        WDD130 &copy; <span id="currentyear"></span> - Kelsie Garcia - Aloha, Hawaii 
+        WDD130 <span id="currentyear"></span> - Kelsie Garcia - Aloha, Hawaii 
       </p>
-      <p></p>
+      <p><span id="lastModified"></span></p>
     </footer>
   </body>
 </html>
