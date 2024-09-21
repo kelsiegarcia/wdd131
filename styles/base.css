@@ -11,10 +11,10 @@ header {
     background-color: #eaf0ef;
     color: white;
     text-align: center;
-    font-size: 35px;
+    font-size: 16px;
     text-shadow: 1px 1px rgb(199, 200, 201);
-    margin-top: -170px;
-    padding-top: 10px;
+    margin-top: -50px;
+    padding-top: 30px;
 }
 
 .navigation {
@@ -42,8 +42,16 @@ a:visited {
     text-decoration: none;
 }
 
+a:hover {
+    color: #5c6b70;
+}   
+
+.resources:hover {
+    color:#727475;
+}
+
 #nav-font-size {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 img {
@@ -55,8 +63,8 @@ img {
 
 .main {
     padding: 20px;
-    margin: 0 auto;
-    max-width: 1600px;
+    margin-bottom: 75px;
+    margin-left: 75px;
     align-self: baseline;
 }
 
@@ -86,15 +94,12 @@ h2 {
 .description {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 30px;
     padding-right: 30px;
     text-align: justify;
     margin-top: 10px;
     gap: 5px;
-
-
-    
 }
 
 .hi-section {
@@ -117,7 +122,6 @@ h2 {
     padding-bottom: 30px;
     padding-top: 10px;
     text-align: justify;
-
 }
 
 .card2{
@@ -146,7 +150,7 @@ a.resources {
 
 footer {
     font-family: 'Libre Baskerville', serif;
-    font-size: 25px; 
+    font-size: 15px; 
     background-color:#eaf0ef;
     color: slategray;
     text-align: center;
