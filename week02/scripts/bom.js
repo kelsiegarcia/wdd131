@@ -4,14 +4,6 @@ const list = document.querySelector('ul');
 const li = document.createElement('li');
 const deleteButton = document.createElement('button');
 
-    
-
-  //   li.textContent = input.value;
-  //   
-  //   
-  //  }
-// });
-
 button.addEventListener('click', function() {
   if (input.value.trim() !== '') {
     li.textContent = input.value;
