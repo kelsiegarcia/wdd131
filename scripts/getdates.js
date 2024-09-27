@@ -1,8 +1,8 @@
-let currentDate = new Date();
-let lastModified = new Date(document.lastModified);
+const year = document.querySelector("#currentyear");
+const modified = document.querySelector("#lastmodified");
 
-let year = document.getElementById("currentyear");
-year.textContent = `©${currentDate.getFullYear()}`;
+const today = new Date();
 
-let date = document.getElementById("lastModified");
-date.textContent = `Last Modification : ${lastModified.getMonth()}/${lastModified.getDate()}/${lastModified.getFullYear()} ${lastModified.getHours()}:${lastModified.getMinutes()}:${lastModified.getSeconds()}`
+year.innerHTML = `${today.getFullYear()}`;
+
+modified.innerHTML = `Last Modified: ${document.lastModified}`

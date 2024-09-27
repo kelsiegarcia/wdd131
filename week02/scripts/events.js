@@ -11,14 +11,14 @@
 //    </div>
 //  </li>`;
 
-const button = document.querySelector("#submitTask");
-const taskList = document.querySelector("#todoList");
+const button = document.querySelector('#submitTask');
+const taskList = document.querySelector('#todoList');
 let tasks = [];
 
 function renderTasks(tasks) {
   // get the list element from the DOM
   // loop through the tasks array. transform (map) each task object into the appropriate HTML to represent a to-do.
-  const listElement = document.querySelector("#todoList");
+  const listElement = document.querySelector('#todoList');
   // listElement.innerHTML = "";
   const html = tasks.map((task) => `<li ${task.completed ? 'class="strike"' : ""}>
     <p>${task.detail}</p>
@@ -35,7 +35,7 @@ function newTask() {
   // get the value entered into the #todo input
   // add it to our arrays tasks
   // render out the list
-  const input = document.querySelector("#todo");
+  const input = document.querySelector('#todo');
   const task = input.value.trim();
   if (task !== '') {
     const object = { detail: task, completed: false}
