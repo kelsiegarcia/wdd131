@@ -12,10 +12,14 @@ header, h1, h2, #menu, figcaption {
 	font-family: "Montserrat", sans-serif;
 }
 
+h1 {
+	padding-top: 20px;
+}
+
 header {
 	background-color: #32a897;
 	font-family:"Montserrat", sans-serif;
-	padding: 20px;
+	padding-left: 20px;
 }
 
 #menu {
@@ -44,6 +48,8 @@ figcaption {
 
 .navigation li {
 	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .navigation a:active {
@@ -97,7 +103,6 @@ p {
 }
 
 ul {
-	padding: 20px;
 	margin: 0 auto;
 }
 

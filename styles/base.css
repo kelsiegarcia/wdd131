@@ -61,10 +61,15 @@ img {
 	padding: 10px;
 }
 
-.main {
+main {
 	padding: 20px;
 	margin-left: 75px;
 	align-self: baseline;
+	gap: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-self: center;
+	max-width: 1500px;
 }
 
 .section-container {
@@ -156,4 +161,10 @@ footer {
 	text-align: center;
 	width: 100%;
 	position: sticky;
+}
+
+@media screen and (max-width: 700px) {
+	main {
+		grid-template-columns: 1fr;
+	}
 }
