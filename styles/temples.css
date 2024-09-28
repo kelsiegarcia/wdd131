@@ -28,7 +28,6 @@ header {
 	font-weight: 700;
 	padding: 15px;
 	background-color: #32a897;
-	border-color: none;
 }
 
 h2 {
@@ -57,7 +56,7 @@ figcaption {
 	
 }
 
-li:hover{
+.navigation:hover {
 	background-color: #e0e6e8;
 }
 
