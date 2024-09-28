@@ -46,9 +46,13 @@ figcaption {
 	display: block;
 }
 
-.navigation a:hover, navigation a:active {
+.navigation a:active {
 	color: #261f1e;
-	background-color: #5c6b70;
+	
+}
+
+li:hover{
+	background-color: #e0e6e8;
 }
 
 .navigation a {
@@ -94,6 +98,8 @@ p {
 
 ul {
 	padding: 20px;
+	display: flex;
+	margin: 0 auto;
 }
 
 .container {

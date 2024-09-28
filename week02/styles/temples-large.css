@@ -4,9 +4,6 @@
 		align-items: center;
 	}
 
-	.navigation a {
-		margin-left: 50px;
-	}
 	.navigation li {
 		display: block;
 		/* change state in small view */
