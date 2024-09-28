@@ -56,8 +56,9 @@ figcaption {
 	
 }
 
-.navigation:hover {
+	a:hover  {
 	background-color: #e0e6e8;
+	padding: 10px;
 }
 
 .navigation a {
@@ -71,6 +72,7 @@ figcaption {
 	font-size: 25px;
 	color:#261f1e;
 	list-style: none;
+	padding: 10px;
 }
 
 .navigation li {
