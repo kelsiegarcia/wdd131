@@ -13,7 +13,8 @@ header, h1, h2, #menu, figcaption {
 }
 
 h1 {
-	padding-top: 20px;
+	padding: 20px 0 20px 0;
+	
 }
 
 header {
@@ -26,8 +27,9 @@ header {
 	display: block;
 	font-size: 3rem;
 	font-weight: 700;
-	padding: 15px;
+	padding: 5px 15px 0 0; 
 	background-color: #32a897;
+	float: right;
 }
 
 h2 {
@@ -92,14 +94,14 @@ a:visited {
 }
 
 #menu.show::before {
-	content: "X";
+	content: "x";
 }
 
 .show li {
 	display: block;
 }
 
-p {
+div {
 	padding: 10px;
 }
 
