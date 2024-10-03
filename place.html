@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Kelsie Garcia"/>
+	<meta name="description" content="Place">
+	<link href="styles/place.css" rel="stylesheet">
+	<script defer src="scripts/place.js"></script>
+	<title>Place</title>
+</head>
+<body>
+	<header>
+		<h1>
+			Hawaii
+		</h1>
+	</header>
+	<main>
+		<section class="place-data">
+			<h2>
+				Data
+			</h2>
+			<ul>
+				<li>Area: 567 miles</li>
+				<li>Population: 995,638</li>
+				<li>Capital: Honolulu</li>
+				<li>Languages: </li>
+				<li>Currency: </li>
+				<li>Time zome: HST </li>
+				<li>Calling Code: +1</li>
+				<li>Time zome: HST</li>
+				<li>Internet TLD .hawaii</li>
+			</ul>
+		</section>
+		<section class="place-weather">
+			<h2>
+				Weather
+			</h2>
+			<img src="images/weather-icon.svg" class="weather-icon"alt="weather icon" width="40" height="40">
+			<ul>
+				<li id="temp"></li>
+				<li id="conditions"></li>
+				<li id="wind"></li>
+				<li id="humidity"></li>
+				<li id="wind-chill"></li>
+			</ul>
+		</section>
+		<picture>
+			<source srcset="images/hero-large-hawaii.webp" media="(min-width: 1000px)">
+			<img class="hero"src="images/hero-small-hawaii.webp" alt="Waikiki Hawaii">
+		</picture>
+	</main>
+	<footer>
+		<p>
+			WDD131 <span id="currentyear"></span> - Kelsie Garcia - Aloha, Hawaii</p>
+		<p><span id="lastmodified"></span></p>
+	</footer>
+</body>
+</html>
