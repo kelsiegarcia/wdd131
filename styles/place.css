@@ -94,18 +94,18 @@ footer {
 	padding: 10px;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 840px){
 	.place-data {
 		position: absolute;
 		top: 20px;
-		left: 50px;
+		left: 70px;
 		background-color: white;
 		padding: 10px 50px 0 50px;
 	}
 
 	.place-weather {
 		position: absolute;
-		bottom: 150px;
+		bottom: 75px;
 		right: 70px;
 		background-color: white;
 		padding: 10px 50px 0 50px;
