@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Kelsie Garcia">
+		<meta name="description" content="Responsive layout for photo album temples">
+		<title>Photo Album</title>
+		<script defer src="scripts/filtered-temples.js"></script>
+		<script defer src="scripts/getdates.js"></script>
+		<link href="styles/filtered-temples.css" rel="stylesheet">
+		<link href="styles/filtered-temples-large.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/svg+xml" sizes="any"
+			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🌺%3C/text%3E%3C/svg%3E">
+	</head>
+	<body>
+		<header>
+			<div id="menu"></div>
+			<h1>Photo Album-Temples</h1>
+			<nav class="navigation">
+				<ul>
+					<li><a href="#" id="home">Home</a></li>
+					<li><a href="#" id="old">Old</a></li>
+					<li><a href="#" id="new">New</a></li>
+					<li><a href="#" id="large">Large</a></li>
+					<li><a href="#" id="small">Small</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>Home</h2>
+			<div class="picture-grid">
+			</div>
+		</main>
+		<footer>
+			<p>
+				WDD131 <span id="currentyear"></span> - Kelsie Garcia - Aloha, Hawaii</p>
+			<p><span id="lastmodified"></span></p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+		align-items: center;
+	}
+
+	.navigation li {
+		display: block;
+		/* change state in small view */
+		flex: 1 1 100%;
+	}
+
+	ul {
+		display: flex;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1680px) {
+	.container {
+		max-width: 1500px;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+}
