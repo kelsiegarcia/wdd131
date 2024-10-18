@@ -39,7 +39,7 @@ p {
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
-	border-color: solid var(--seconday-color) 1px;
+	border-color: var(--seconday-color) 1px;
 	letter-spacing: .2rem;
 }
 
