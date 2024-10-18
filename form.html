@@ -17,30 +17,27 @@
 <body>
 	<form method="get" action="review.html" class="rev1">
 		<fieldset>
-			<div class="top"><legend>Product Review</legend></div>
+			<h2 class="top">Product Review</h2>
 			<label class="prodName">Product Name *
 				<select id="prodName" name="name" required>
-					<option disabled selected value=""></option>
-					<option value="fluxCapacitor"></option>
-					<option value="powerLaces"></option>
-					<option value="timeCircuits"></option>
-					<option value="lowVoltageReactor"></option>
-					<option value="warpEqualizer"></option>
+					<option disabled selected value="">Select a Product:</option>
 				</select>
 			</label>
-			<div class="star-ratings">Overall Rating *
-				<label class="star">&#11088;
-					<input type="radio" name="star" id="one" required >
-				</label>
-				<label class="star">&#11088;&#11088;<input type="radio" name="star" id="two"></label>
-				<label class="star">&#11088;&#11088;&#11088;<input type="radio" name="star" id="three"></label>
-				<label class="star">&#11088;&#11088;&#11088;&#11088;<input type="radio" name="star" id="four"></label>
-				<label class="star">&#11088;&#11088;&#11088;&#11088;&#11088;<input type="radio" name="star" id="five"></label>
+			<div>Overall Rating *
+				<div class="star-ratings">
+					<label class="star">&#11088;
+						<input type="radio" name="star" id="one" required >
+					</label>
+					<label class="star">&#11088;&#11088;<input type="radio" name="star" id="two"></label>
+					<label class="star">&#11088;&#11088;&#11088;<input type="radio" name="star" id="three"></label>
+					<label class="star">&#11088;&#11088;&#11088;&#11088;<input type="radio" name="star" id="four"></label>
+					<label class="star">&#11088;&#11088;&#11088;&#11088;&#11088;<input type="radio" name="star" id="five"></label>
+				</div>
 			</div>
 			<label>Date of Installation *
 				<input type="date" id="date" name="date" required>
 			</label>
-			<div>Which features did you find useful in the product<br><span>(Check all that apply)</span>
+			<div>Which features did you find useful in the product?<br><span>(Check all that apply)</span>
 				<label>Durability
 					<input type="checkbox" name="features" value="durability"></label>
 				<label>Design
@@ -64,7 +61,7 @@
 		<footer>
 			<p>
 				WDD131 <span id="currentyear"></span> - Kelsie Garcia - Aloha, Hawaii</p>
-		<p><span id="lastmodified"></span></p>
+		<p><span id="lastmodified"></span><br><span id="visits"></span></p>
 	</footer> 
 </body>
 </html>
