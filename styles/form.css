@@ -129,12 +129,17 @@ footer {
 	font-family: 'Libre Baskerville', serif;
 	font-size: 18px;
 	text-align: center;
-	max-width: 100%;
+	width: 100%;
+	max-width: 460px;
 	align-content: center;
 	position: sticky;
 	height: 100px;
-	margin: auto 0;
+	margin: 0 auto;
 	padding: 10px;
 	background-color: var(--main-color);
 	margin-top: 10px;
+}
+
+#review {
+	padding: .5rem;
 }
