@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Kelsie Garcia">
+	<meta name="description" content="Responsive layout for photo album temples">
+	<script defer src="scripts/form.js"></script>
+	<script defer src="scripts/getdates.js"></script>
+	<link href="styles/form.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<title>Product Review Form</title>
+</head>
+<body>
+	<form method="get" action="review.html" class="rev1">
+		<fieldset>
+			<div class="top"><legend>Product Review</legend></div>
+			<label class="prodName">Product Name *
+				<select id="prodName" name="name" required>
+					<option disabled selected value=""></option>
+					<option value="fluxCapacitor"></option>
+					<option value="powerLaces"></option>
+					<option value="timeCircuits"></option>
+					<option value="lowVoltageReactor"></option>
+					<option value="warpEqualizer"></option>
+				</select>
+			</label>
+			<div class="star-ratings">Overall Rating *
+				<label class="star">&#11088;
+					<input type="radio" name="star" id="one" required >
+				</label>
+				<label class="star">&#11088;&#11088;<input type="radio" name="star" id="two"></label>
+				<label class="star">&#11088;&#11088;&#11088;<input type="radio" name="star" id="three"></label>
+				<label class="star">&#11088;&#11088;&#11088;&#11088;<input type="radio" name="star" id="four"></label>
+				<label class="star">&#11088;&#11088;&#11088;&#11088;&#11088;<input type="radio" name="star" id="five"></label>
+			</div>
+			<label>Date of Installation *
+				<input type="date" id="date" name="date" required>
+			</label>
+			<div>Which features did you find useful in the product<br><span>(Check all that apply)</span>
+				<label>Durability
+					<input type="checkbox" name="features" value="durability"></label>
+				<label>Design
+					<input type="checkbox" name="features" value="design"></label>
+				<label>Ease of use
+					<input type="checkbox" name="features" value="easeOfUse"></label>
+				<label>Performance
+					<input type="checkbox" name="features" value="performance"></label>
+				</div>
+			<div>Written Review <br><span>(Optional)</span>
+				<textarea name="review" id="review"></textarea>
+			</div>
+			<div>Your Name <br><span>(Optional)</span>
+				<textarea name="userName" id="userName"></textarea>
+			</div>
+			<div class="btn">
+				<input type="submit" value="Post Review">
+			</div>
+		</form>
+	</fieldset>
+		<footer>
+			<p>
+				WDD131 <span id="currentyear"></span> - Kelsie Garcia - Aloha, Hawaii</p>
+		<p><span id="lastmodified"></span></p>
+	</footer> 
+</body>
+</html>
