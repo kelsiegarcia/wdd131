@@ -35,12 +35,14 @@ p {
 	font-family: 'Roboto', sans-serif;
 	color: #01161e;
 	font-size: 18px;
+	padding: .5rem;
 }
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	border-color: var(--seconday-color);
 	letter-spacing: .2rem;
+	padding: .5rem;
 }
 
 .card {
@@ -49,6 +51,13 @@ h1 {
 	border-width: 4px 4px 4px 4px;
 	border-color: var(--seconday-color);
 	border-radius: 0.3rem;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 25px;
 }
 
 footer, footer>p {
