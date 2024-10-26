@@ -1,0 +1,35 @@
+* {
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto;
+}
+
+#display {
+	font-family: Montserrat;
+	margin-left: 1rem;
+}
+
+.details {
+	font-size: .9rem;
+	font-family: Montserrat;
+}
+
+.details-footer {
+	margin-top: 1rem;
+}
+
+.confirmation {
+	margin: 1rem 0;
+}
+
+.reservation {
+	margin-top: 1rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+

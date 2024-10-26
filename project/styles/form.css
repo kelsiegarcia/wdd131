@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	/* --main-color: #8dd9e0; */
+	/* --secondary-color: #f6ce8c; */
+}
+
+body {
+	font-family: Montserrat;
+	padding: 0 2%;
+	min-height: 20rem;
+}
+
+.cour1 fieldset {
+	margin: 2rem 0 0 0;
+	padding: .5rem;
+	border-style: none;
+	max-width: 500px;
+	width: 100%;
+	font-size: 1rem;
+}
+
+.cour1 input[type="submit"] {
+	border: none;
+	background-image: linear-gradient(#0c5af5, #2468f0);
+	color: #fff;
+	border-radius: 6px;
+	padding: .8rem;
+	width: 96%;
+	max-width: 400px;
+	box-shadow: 1px 1px 4px #999;
+}
+
+
+.cour1 select,
+.cour1 input[type="text"],
+.cour1 input[type="tel"],
+.cour1 input[type="datetime-local"] {
+	background-color: #eee;
+	display: block;
+	border: solid 1px #999;
+	border-radius: 6px;
+	padding: .75rem;
+	color: #555;
+	width: 100%;
+	max-width: 300px;
+	appearance: none;
+	margin-top: .5rem;
+}
+
+.cour1 textarea {
+	display: block;
+	height: 100px;
+	width: 400px;
+	margin-top: .5rem;
+}
+
+.cour1 label {
+	display: block;
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+.star-ratings {
+	display: flex;
+	flex-direction: row;
+	margin: -.5rem;
+}
+
+.cour1 .star {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cour1 label {
+	padding: .5rem;
+}
+
+.cour1 span {
+	font-style: italic;
+	font-size: .7rem;
+	margin-top: .5rem;
+}
+
+.cour1 {
+	border: solid 1px #999;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 460px;
+	margin: 0 auto;
+}
+
+div {
+	margin: 1rem;
+}
+
+.btn {
+	margin-top: 2rem;
+	align-items: center;
+	margin-left: 1.5rem;
+}
+
+.top {
+	background-color: #ddd;
+	font-size: 1.2rem;
+	margin: -2.5rem -.5rem 0 -.5rem;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	padding-top: 1.5rem;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.cour1 input:required,
+.rev1 select:required {
+	border-bottom: solid 8px red;
+}
+
+
+.cour1 input:required:valid,
+.cour1 select:required:valid {
+	border-bottom: solid 8px green;
+}
+
+footer {
+	font-family: 'Libre Baskerville', serif;
+	background-color: #eaf0ef;
+	color: black;
+	text-align: center;
+	max-width: 100%;
+	align-content: center;
+	position: sticky;
+	height: 100px;
+}
+
+#review {
+	padding: .5rem;
+}

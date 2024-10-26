@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Kelsie Garcia">
+	<meta name="description" content="Basic Web Development Concepts for a Pickleball page">
+	<title>Honolulu Pickleball</title>
+	<script defer src="/project/scripts/pickleball.js"></script>
+	<script defer src="/scripts/getdates.js"></script>
+	<script defer src="/project/scripts/visits.js"></script>
+	<script defer src="/project/scripts/navigaton.js"></script>
+	<link href="styles/pickleball.css" rel="stylesheet">
+	<link href="styles/pickleball-large.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" sizes="any"
+		href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%220.9em%22%20font-size%3D%2290%22%3E%F0%9F%8C%BA%3C%2Ftext%3E%3C%2Fsvg%3E">
+</head>
+<body>
+	<header>
+		<div id="menu"></div>
+		<img src="images/logo.png" alt="Pickleball" id="logo" width="225px" height="100px" loading="lazy">
+		<h1>Honolulu Pickleball</h1>
+		<nav class="navigation">
+			<ul>
+				<li><a href="pickleball.html" id="home">Home</a></li>
+				<li><a href="form.html" id="form">Form</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<picture>
+			<source srcset="/project/images/hero.png" alt="pickleball" width="1520px" height="720px" media="(min-width: 550px)">
+			<img class="hero" alt="small pickleball" src="/project/images/hero-small.png">
+		</picture>
+		<h1 class="option">Choose your court</h1>
+		<div class="card-grid" id="cardGrid">
+		</div>
+	</main>
+	<footer>
+		<p>WDD131 <span id="currentyear"></span> - Kelsie Garcia - Aloha, Hawaii</p>
+		<p><span id="lastmodified"></span></p>
+		<p><span id="visits"></span></p>
+	</footer>
+</body>
+</html>

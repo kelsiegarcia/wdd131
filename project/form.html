@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Kelsie Garcia">
+	<meta name="description" content="Responsive layout for Indoor Courts Booking Form">
+	<script defer src="/project/scripts/form.js"></script>
+	<link href="/project/styles/form.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<title>Indoor Courts Booking Form</title>
+</head>
+<body>
+	<form id ="form" method="get" action="confirmation.html" class="cour1">
+		<fieldset>
+			<h1 class="top">Indoor Courts Booking Form</h1>
+			<label class="courtName">Court Name *</label>
+			<select id="courtName" name="name" required>
+				<option disabled selected value="">Select a Court:</option>
+			</select>
+			<div>Date of and time of Reservation *<br><span></span>
+				<input type="datetime-local" id="dateTime" name="dateTime"required>
+			<div>Which ammenities would you like reserved for you?<br><span>(Check all that apply)</span>
+				<label>Towels
+					<input type="checkbox" name="ammenities" value="towels"></label>
+				<label>Water
+					<input type="checkbox" name="ammenities" value="water"></label>
+				<label>Paddles
+					<input type="checkbox" name="ammenities" value="paddles"></label>
+				<label>Pickleballs	
+					<input type="checkbox" name="ammenities" value="pickleballs"></label>
+				</div>
+			<div>Phone number *<br>
+				<input type="tel" name="phoneNumber" id="phoneNumber" placeholder="808-123-1234" required>
+			</div>
+			<div>First and last name<br>
+				<input type="text" placeholder="First and Last Name" pattern="[a-zA-Z\s]+" title="Only letters and spaces allowed" id="firstLastName" name="firstLastName" required>
+			</div>
+			<div class="btn">
+				<input type="submit" value="Book Reservation">
+			</div>
+		</fieldset>
+	</form>
+		<footer>
+			<p>
+				WDD131 <span id="currentyear"></span> - Kelsie Garcia - Aloha, Hawaii</p>
+		<p><span id="lastmodified"></span><br><span id="visits"></span></p>
+	</footer> 
+</body>
+</html>

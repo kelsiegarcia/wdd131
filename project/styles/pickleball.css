@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+header,
+h1,
+h2,
+#menu,
+figcaption {
+	font-family: "Montserrat", sans-serif;
+}
+
+header {
+	background-color: #Ffffff;
+	font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+	padding: 20px 0 20px 0;
+	text-align: center;
+
+}
+
+.option {
+	font-size: 45px;
+}
+
+p {
+	font-size: 25px;
+	padding: 10px;
+}
+/* 
+.card-description {
+	font-size: 20px;
+	padding: 10px;
+} */
+
+button {
+	font-size: 25px;
+	padding: 10px;
+	border: none;
+	background-image: linear-gradient(#0c5af5, #2468f0);
+	color: #fff;
+	border-radius: 6px;
+	padding: .8rem;
+	width: 96%;
+	max-width: 400px;
+	box-shadow: 1px 1px 4px #999;
+}
+
+.card-description {
+	/* Position at bottom of card */
+	margin-top: auto;
+	/* Optional: add padding to separate from content */
+	padding-top: 10px;
+	/* Optional: add border to separate from content */
+}
+
+#menu {
+	display: block;
+	font-size: 3rem;
+	font-weight: 700;
+	/* padding: 5px 15px 0 0; */
+	background-color: #eaf0ef;
+	float: right;
+}
+
+#logo {
+	display: block;
+	margin: 0 auto;
+}
+
+h2 {
+	text-align: center;
+	padding: 25px;
+	font-size: 37px;
+}
+
+figcaption {
+	padding: 20px;
+	font-size: 25px;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+
+.navigation a:active {
+	color: #261f1e;
+
+}
+
+a:hover {
+	background-color: #e0e6e8;
+	padding: 10px;
+}
+
+.navigation {
+	background-color: #eaf0ef;
+}
+
+.navigation a {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 100%;
+	/* margin-left: 50px; */
+	font-size: 25px;
+	color: #261f1e;
+	list-style: none;
+	padding: 10px;
+}
+
+.navigation li {
+	display: none;
+	padding: 20px;
+	align-content: center;
+}
+
+a:link {
+	color: #261f1e;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+#menu.show::before {
+	content: "x";
+}
+
+.show li {
+	display: block;
+}
+
+div {
+	padding: 10px;
+}
+
+ul {
+	margin: 0 auto;
+}
+.card {
+	border: 1px solid #ffd166;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #999;
+	padding: 10px;
+	width: 400px;
+	height: 315px;
+	overflow: hidden;
+	display: -webkit-box;
+	/* -webkit-line-clamp: 3; */
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+
+.card-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 40px;
+	place-items: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 75px;
+	
+}
+
+
+footer {
+	font-family: 'Libre Baskerville', serif;
+	background-color: #eaf0ef;
+	color: black;
+	text-align: center;
+	max-width: 100%;
+	height: 50px;
+	align-content: center;
+	position: sticky;
+	height: 150px;
+
+}
