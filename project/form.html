@@ -6,12 +6,28 @@
 	<meta name="author" content="Kelsie Garcia">
 	<meta name="description" content="Responsive layout for Indoor Courts Booking Form">
 	<script defer src="/project/scripts/form.js"></script>
+	<script defer src="/scripts/getdates.js"></script>
+	<script defer src="/project/scripts/visits.js"></script>
+	<script defer src="/project/scripts/navigaton.js"></script>
 	<link href="/project/styles/form.css" rel="stylesheet">
+	<link href="styles/pickleball.css" rel="stylesheet">
+	<link href="styles/pickleball-large.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
 		rel="stylesheet">
 	<title>Indoor Courts Booking Form</title>
 </head>
+<header>
+	<div id="menu"></div>
+	<img src="images/logo.png" alt="Pickleball" id="logo" width="225px" height="100px" loading="lazy">
+	<h1>Honolulu Pickleball</h1>
+	<nav class="navigation">
+		<ul>
+			<li><a href="pickleball.html" id="home">Home</a></li>
+			<li><a href="form.html" id="form">Form</a></li>
+		</ul>
+	</nav>
+</header>
 <body>
 	<form id ="form" method="get" action="confirmation.html" class="cour1">
 		<fieldset>
