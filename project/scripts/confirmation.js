@@ -21,7 +21,8 @@ if (data) {
 	p3.textContent = `Court and players: ${data.name}`;
 	p4.textContent = `Date and Time: ${formattedDate}.`;
 } else {
-	p1.textContent = 'Court name is not available. Please check your booking details.';
+	p1.textContent = 'Court name is not available';
+	p2.textContent = 'Please check your booking details.';
 }
 
 if (display) {
