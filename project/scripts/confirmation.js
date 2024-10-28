@@ -33,4 +33,3 @@ if (display) {
 } else {
 	console.error('Display element not found');
 }
-

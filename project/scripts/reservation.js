@@ -4,11 +4,11 @@ const courtsSelecton = [
 		players: "up to 10"
   },
   {
-    name: "Jester Court",
+		name: "Jester Court",
 		players: "up to 2"
   },
   {
-    name: "Royalty Court",
+		name: "Royalty Court",
 		players: "up to 6"
   }
 ];
@@ -22,12 +22,12 @@ courtsSelecton.forEach(court => {
 	select.appendChild(option);
 });
 
-const form = document.getElementById('form');
 
-form.addEventListener('submit', function(event) {
+const submit = document.getElementById('form');
+submit.addEventListener('submit', function(event) {
 	event.preventDefault();
 	
-	const formData = new FormData(form);
+	const formData = new FormData(submit);
 	const data = {};
 	
 	for (const [key, value] of formData.entries()) {
@@ -35,11 +35,11 @@ form.addEventListener('submit', function(event) {
 		console.log(key, value);
 	}
 
-	 console.log('Form data to be saved:', data); // Log the entire data object
+	console.log('Form data to be saved:', data); // Log the entire data object
 	
 	localStorage.setItem('formData', JSON.stringify(data));
 
 	console.log('Data saved to localStorage:', localStorage.getItem('formData')); // Log the data saved in localStorage
 	
-	window.location = 'confirmation.html';
+	window.location.href = 'confirmation.html'; // Use window.location.href instead of window.location
 });

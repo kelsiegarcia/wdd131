@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Kelsie Garcia">
 	<meta name="description" content="Responsive layout for Indoor Courts Booking Form">
-	<script defer src="scripts/form.js"></script>
+	<script defer src="scripts/reservation.js"></script>
 	<script defer src="../scripts/getdates.js"></script>
 	<script defer src="scripts/visits.js"></script>
 	<script defer src="scripts/navigaton.js"></script>
@@ -24,7 +24,7 @@
 	<nav class="navigation">
 		<ul>
 			<li><a href="pickleball.html" id="home">Home</a></li>
-			<li><a href="form.html" id="form">Form</a></li>
+			<li><a href="reservation.html" id="reservation">Reservation Form</a></li>
 		</ul>
 	</nav>
 </header>
@@ -55,7 +55,7 @@
 				<input type="text" placeholder="First and Last Name" pattern="[a-zA-Z\s]+" title="Only letters and spaces allowed" id="firstLastName" name="firstLastName" required>
 			</div>
 			<div class="btn">
-				<input type="submit" value="Book Reservation">
+				<input type="submit" value="Book Reservation" id="submitRes">
 			</div>
 		</fieldset>
 	</form>

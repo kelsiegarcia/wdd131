@@ -43,7 +43,7 @@ displayCards();
 const cardButtons = document.querySelectorAll('.card-button');
 cardButtons.forEach(button => {
 	button.addEventListener('click', () => {
-		window.location.href = "form.html";
+		window.location.href = "reservation.html";
 	});
 });
 
