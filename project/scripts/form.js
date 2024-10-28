@@ -30,12 +30,16 @@ form.addEventListener('submit', function(event) {
 	const formData = new FormData(form);
 	const data = {};
 	
-	for (const [key, value] of formData) {
+	for (const [key, value] of formData.entries()) {
 		data[key] = value;
 		console.log(key, value);
 	}
+
+	 console.log('Form data to be saved:', data); // Log the entire data object
 	
 	localStorage.setItem('formData', JSON.stringify(data));
+
+	console.log('Data saved to localStorage:', localStorage.getItem('formData')); // Log the data saved in localStorage
 	
 	window.location = 'confirmation.html';
 });
