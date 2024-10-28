@@ -39,7 +39,7 @@ function displayCards() {
 displayCards();
 
 
-// add an event listener to the button that takes them to the form html
+// add an event listener to the button that takes them to the reservation html
 const cardButtons = document.querySelectorAll('.card-button');
 cardButtons.forEach(button => {
 	button.addEventListener('click', () => {
