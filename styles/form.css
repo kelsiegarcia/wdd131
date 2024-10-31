@@ -51,6 +51,11 @@ body {
 	margin-top: .5rem;
 }
 
+.rev1 input[type="checkbox"] {
+	display: inline-block;
+	margin-right: .5rem;
+}
+
 .rev1 textarea {
 	display: block;
 	height: 100px;
@@ -60,7 +65,7 @@ body {
 
 .rev1 label {
 	display: block;
-	padding: 1rem;
+	padding: 1rem 0 0.5rem 0;
 	font-size: 1rem;
 }
 
