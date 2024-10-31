@@ -38,6 +38,7 @@ products.forEach(product => {
 	select.appendChild(option);
 });
 
+
 const submit = document.getElementById('form');
 submit.addEventListener('submit', function(event) {
 	event.preventDefault();
