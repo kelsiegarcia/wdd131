@@ -45,10 +45,17 @@ submit.addEventListener('submit', function(event) {
 	
 	const formData = new FormData(submit);
 	const data = {};
+
 	
 	for (const [key, value] of formData.entries()) {
 		data[key] = value;
 		console.log(key, value);
+
+		// if key is features thabn value is an array
+
+		if (key === 'features') {
+			data[key] = value.split(',');
+		}
 	}
 
 	console.log('Form data to be saved:', data);
