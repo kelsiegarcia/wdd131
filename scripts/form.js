@@ -38,6 +38,27 @@ products.forEach(product => {
 	select.appendChild(option);
 });
 
+const submit = document.getElementById('form');
+submit.addEventListener('submit', function(event) {
+	event.preventDefault();
+	
+	const formData = new FormData(submit);
+	const data = {};
+	
+	for (const [key, value] of formData.entries()) {
+		data[key] = value;
+		console.log(key, value);
+	}
+
+	console.log('Form data to be saved:', data);
+	
+	localStorage.setItem('formData', JSON.stringify(data));
+
+	console.log('Data saved to localStorage:', localStorage.getItem('formData'));
+	
+	window.location.href = 'review.html';
+});
+
 
 const visitDisplay = document.getElementById('visits');
 let visits = localStorage.getItem('visits') || 0;

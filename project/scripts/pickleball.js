@@ -1,4 +1,3 @@
-// create a new object to store the data
 const cards = {
 	card1: {
 		name: "Sigma Court",
@@ -16,15 +15,10 @@ const cards = {
 		description: "Includes: balls, paddles, towels"
 	}
 };
-// create a function to display the data
 function displayCards() {
-	// get the element with the id of "cards"
 	const cardContainer = document.getElementById('cardGrid');
-	// create a variable to store the HTML
 	let html = "";
-	// loop through the object
 	for (let card in cards) {
-		// add the data to the HTML
 		html += `<div class="card">
 			<h2 class="card-name">${cards[card].name}</h2>
 			<p class="card-price">${cards[card].price}</p>
@@ -32,14 +26,11 @@ function displayCards() {
 			<button class="card-button">Book Now</button>
 		</div>`;
 	}
-	// add the HTML to the element
 	cardContainer.innerHTML = html;
 }
-// call the function
 displayCards();
 
 
-// add an event listener to the button that takes them to the reservation html
 const cardButtons = document.querySelectorAll('.card-button');
 cardButtons.forEach(button => {
 	button.addEventListener('click', () => {
@@ -47,9 +38,7 @@ cardButtons.forEach(button => {
 	});
 });
 
-// remove just the padding from the class card description of card1 and card2 in the array
 const cardDescriptions = document.querySelectorAll('.card-description');
-// add margin bottom to the first card description
 cardDescriptions[1].style.marginBottom = "1.9rem";
 cardDescriptions[2].style.marginBottom = "1.9rem";
 

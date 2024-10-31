@@ -35,11 +35,11 @@ submit.addEventListener('submit', function(event) {
 		console.log(key, value);
 	}
 
-	console.log('Form data to be saved:', data); // Log the entire data object
+	console.log('Form data to be saved:', data); 
 	
 	localStorage.setItem('formData', JSON.stringify(data));
 
-	console.log('Data saved to localStorage:', localStorage.getItem('formData')); // Log the data saved in localStorage
+	console.log('Data saved to localStorage:', localStorage.getItem('formData')); 
 	
-	window.location.href = 'confirmation.html'; // Use window.location.href instead of window.location
+	window.location.href = 'confirmation.html'; 
 });
